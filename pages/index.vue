@@ -1,13 +1,15 @@
 <template>
-  <div class="page-index">
-    <Logos />
-    <Examples />
+  <div class="container">
+    <Banner></Banner>
   </div>
 </template>
-
-<style>
-.page-index {
-  padding-top: 60px;
-  text-align: center;
+<script setup>
+import Banner from "./Banner.vue";
+</script>
+<style lang="scss">
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: black;
 }
 </style>

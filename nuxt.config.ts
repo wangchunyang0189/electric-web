@@ -3,21 +3,22 @@ export default defineNuxtConfig({
   app: {
     // head
     head: {
-      title: 'Element Plus + Nuxt 3',
+      title: "广元市旺盛机电维修厂",
       meta: [
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
-          hid: 'description',
-          name: 'description',
-          content: 'ElementPlus + Nuxt3',
+          hid: "description",
+          name: "description",
+          content:
+            "广元市旺盛机电，机电维修出租，变压器维修出租，工厂控制线路安装",
         },
       ],
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    }
+      link: [{ rel: "icon", type: "image/x-icon", href: "/dianji.ico" }],
+    },
   },
 
   // css
-  css: ['~/assets/scss/index.scss'],
+  css: ["~/assets/scss/index.scss"],
 
   typescript: {
     strict: true,
@@ -26,12 +27,12 @@ export default defineNuxtConfig({
 
   // build modules
   modules: [
-    '@vueuse/nuxt',
-    '@unocss/nuxt',
-    '@pinia/nuxt',
-    '@element-plus/nuxt',
-    '@nuxtjs/color-mode'
+    "@vueuse/nuxt",
+    "@pinia/nuxt",
+    "@element-plus/nuxt",
+    "@nuxtjs/color-mode",
   ],
+  plugins: [{ src: "~/plugins/swiper.client.js", mode: "client" }],
 
   // vueuse
   vueuse: {
@@ -40,15 +41,7 @@ export default defineNuxtConfig({
 
   // colorMode
   colorMode: {
-    classSuffix: '',
-  },
-
-  unocss: {
-    uno: true,
-    attributify: true,
-    icons: {
-      scale: 1.2,
-    },
+    classSuffix: "",
   },
   vite: {
     css: {
@@ -60,8 +53,8 @@ export default defineNuxtConfig({
     },
   },
   elementPlus: {
-    icon: 'ElIcon',
-    importStyle: 'scss',
-    themes: ['dark'],
+    icon: "ElIcon",
+    importStyle: "scss",
+    themes: ["dark"],
   },
-})
+});
