@@ -2,21 +2,12 @@
   <footer class="foot-container">
     <div class="credential-box hide-transition" data-v-03e75ab4="">
       <div class="number-content" data-v-03e75ab4="">
-        <div data-v-03e75ab4="">广元市旺盛机电维修厂版权所有</div>
-        <div
-          @click="
-            handleJump(
-              'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51019002000967'
-            )
-          "
-        >
-          蜀公网安备51019002000967号
-        </div>
+        <div data-v-03e75ab4="">广元市兴旺机电维修有限公司版权所有</div>
         <div @click="handleJump('https://beian.miit.gov.cn/')">
           蜀ICP备11001597号
         </div>
       </div>
-      <div class="network-content">增值电信业务经营许可证：川B2-20170025</div>
+      <div class="network-content">服务电话：139-8016-0029</div>
     </div>
   </footer>
 </template>

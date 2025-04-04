@@ -18,7 +18,6 @@ import Bottom from "./Bottom.vue";
 </script>
 <style lang="scss">
 .container {
-  width: 100vw;
   height: 100vh;
   background: black;
 }
